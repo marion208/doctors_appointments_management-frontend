@@ -1,0 +1,238 @@
+/* ------ GENERIC ------ */
+.App {
+  text-align: center;
+}
+/* ------ NAVIGATION ------ */
+nav {
+  background-color: rgb(0,121,186);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 5vh;
+  min-height: 45px;
+  text-decoration: none;
+}
+.leftNav > a:hover, .leftNav > a:visited, .leftNav > a:link, .leftNav > a:active, nav > a:hover, nav > a:visited, nav > a:link, nav > a:active {
+  color: white;
+  text-decoration: none;
+}
+nav > span:hover {
+  cursor: pointer;
+}
+.leftNav * {
+  padding-right: 10px;
+}
+/* ------ FORM ------ */
+form {
+  display: flex;
+  flex-direction: column;
+}
+label, input {
+  padding: 5px;
+}
+input[type=text], input[type=tel] {
+  height: 1.1em;
+  font-size: 1em;
+}
+.FeedbackError {
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+}
+.FeedbackSuccess {
+  color: green;
+  font-weight: bold;
+  padding: 5px;
+}
+.FormXS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75vh;
+  color: rgb(0,121,186);
+}
+.FormXS * {
+  min-width: 50%;
+  text-align: center;
+  font-size: 1em;
+}
+.FormAppointment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.FormAppointment * {
+  width: 400px;
+  text-align: center;
+  font-size: 1em;
+  color: rgb(0,121,186);
+}
+.divFormAbsenceDoctor * {
+  margin: 5px;
+}
+.divFormAbsenceDoctor > select {
+  max-width: 10px;
+  height: 2em;
+}
+.formTitle {
+  font-weight: bold;
+  color: rgb(0,121,186);
+  text-decoration: underline;
+}
+.formConnection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0,121,186);
+  height: 100vh;
+}
+.formConnection * {
+  text-align: center;
+}
+.selectDoctorPlanning {
+  font-weight: bold;
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  color: rgb(0,121,186);
+}
+/* ------ BUTTONS ------ */
+.ButtonsLine {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  margin-top: 20px;
+}
+.ButtonType {
+  background-color: rgb(229 229 229);
+  border: 1px solid rgb(0,121,186);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-right: 10px;
+  color: rgb(0,121,186);
+  margin-top: 20px;
+}
+.ButtonType:hover {
+  cursor: pointer;
+}
+.ButtonValidation {
+  background-color: rgb(33,165,183);
+  border: 0px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  color: white;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.ButtonValidation:hover {
+  cursor: pointer;
+  background-color: rgb(83,186,131);
+}
+.ButtonsManageWeek {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+/* ------ SCHEDULE ------ */
+.HeaderDaysPlanning {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(0,121,186);
+  font-weight: bold;
+}
+.schedule {
+  display: flex;
+  justify-content: space-evenly;
+}
+.columnSchedule {
+  display: flex;
+  flex-direction: column;
+}
+.gridSchedule {
+  display: grid;
+  height: 45px;
+}
+.time_button {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 2px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.time_available {
+  color: orange;
+}
+.time_busy {
+  color: white;
+  background-color: orange;
+}
+.time_absence {
+  color: white;
+  background-color: darkgrey;
+}
+.time_hover:hover {
+  cursor: pointer;
+}
+.time_selected {
+  color: white;
+  background-color: darkgreen;
+}
+.schedule_name {
+  color: grey;
+  font-size: 0.9em;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  text-align: left;
+}
+.schedule_tel {
+  color: grey;
+  font-style: italic;
+  font-size: 0.9em;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  text-align: left;
+}
+.schedule_button_delete {
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: grey;
+}
+.schedule_button_delete:hover {
+  cursor: pointer;
+  color: red;
+}
+.button_delete_absence:hover {
+  cursor: pointer;
+  color: red;
+}
+p > .button_delete_absence {
+  font-weight: bold;
+  text-transform: uppercase;
+}
